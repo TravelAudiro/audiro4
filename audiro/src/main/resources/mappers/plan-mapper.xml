@@ -43,7 +43,7 @@
 		join travel_destination t
 		on d.destination_id = t.travel_destination_id
 		where travel_plan_id = #{travelPlanId}
-		order by detailed_plan_id
+		order by detailed_plan_id;
 	</select>
 	
 	<select id="selectMaxDay"  resultType="Integer">
